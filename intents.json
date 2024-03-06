@@ -1,0 +1,170 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Vai",
+        "Bhai",
+        "Hello vai",
+        "Hello Bhai",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "questions",
+      "patterns": [
+        "Kemon achen",
+        "How are you",
+        "How's everything",
+        "How's it going"
+      ],
+      "responses": [
+        "Good, what can I do for you?",
+        "Alhamdulillah, how can I help?"
+      ]
+    },
+    {
+      "tag": "problems",
+      "patterns": [
+        "I have a problem",
+        "I need Help",
+        "I need Solution",
+        "Code issue",
+        "Need Algorithm",
+        "Want to know Methods"
+      ],
+      "responses": [
+        "What is your problem?",
+        "Tell me about your problem",
+        "Explain your problem",
+        "What do you wants to know?"
+      ]
+    },
+    {
+      "tag": "problem_1",
+      "patterns": [
+        "Maximum",
+        "Max Number",
+        "Find Maximum",
+        "Maximum Number",
+        "Maximum of two numbers"
+      ],
+      "responses": [
+        "Your solution is here>>\n\n\t#Getting input from user\n\tnum1 = int(input(\"Enter the first number: \"))\n\tnum2 = int(input(\"Enter the second number: \"))\n\n\t#Printing the maximum value\n\tif(num1 > num2):\n\t  print(num1, \"is greater\")\n\telif(num1 < num2):\n\t    print(num2, \"is greater\")\n\telse:\n\t    print(\"Both are equal\")\n\nIf you want to Know the Algorithm?\n >> Type \"Find Maximum Algorithm\"\nOr, If you want to Know about more Methods?\n >> Type \"Find Maximum Method\"\n"
+      ]
+    },
+    {
+      "tag": "algo_1",
+      "patterns": [
+        "Find Maximum Algorithm"
+      ],
+      "responses": [
+        "Algorithm:\n\t1. Get input from the user for num1 and num2.\n\t2. Using if-else ladder to get the maximum value,\n\ta. If(num1 > num2), print \"num1 is greater\".\n\tb. ElseIf (num1 < num2), \"num2 is greater\".\n\tc. Else, print \"both are equal\".\n"
+      ]
+    },
+    {
+      "tag": "mthd_1",
+      "patterns": [
+        "Find Maximum Method"
+      ],
+      "responses": [
+        "Here you can find more details about your problem>> \n\n\thttps://www.geeksforgeeks.org/maximum-of-two-numbers-in-python\n"
+      ]
+    },
+    {
+      "tag": "problem_2",
+      "patterns": [
+        "Factorial",
+        "Factorial Number",
+        "Find Factorial",
+        "Finding Factorial"
+      ],
+      "responses": [
+        "Your solution is here>>\n\t#To take input from the user\n\tnum = int(input(\"Enter a number: \"))\n\n\tfactorial = 1\n\n\t#Check if the number is negative, positive or zero\n\tif num < 0:\n\t   print(\"Sorry, factorial does not exist for negative numbers\")\n\telif num == 0:\n\t   print(\"The factorial of 0 is 1\")\nelse:\n\t   for i in range(1,num + 1):\n\t       factorial = factorial*i\n\t   print(\"The factorial of\",num,\"is\",factorial)\n\nIf you want to Know the Algorithm?\n>> Then type \"Find Factorial Algorithm\"\n Or, If you want to Know about more Methods?\n>> Then type \"Find Factorial Method\"\n"
+      ]
+    },
+    {
+      "tag": "algo_2",
+      "patterns": [
+        "Find Factorial Algorithm"
+      ],
+      "responses": [
+        "Algorithm :\n\tStep 1: Start\n\tStep 2: Declare Variable n, fact, i\n\tStep 3: Read number from User\n\tStep 4: Initialize Variable fact=1 and i=1\n\tStep 5: if number < 0\n\t           Print Sorry, factorial does not exist for negative numbers\n\tStep 6: if number= 0          \n\t           Print The factorial of 0 is 1\n\tStep 7: Repeat Until i<=number\n\t            5.1 fact=fact*i\n\t            5.2 i=i+1\n\tStep 8: Print fact\n\tStep 9: Stop\n"
+      ]
+    },
+    {
+      "tag": "mthd_2",
+      "patterns": [
+        "Find Factorial Method"
+      ],
+      "responses": [
+        "Here you can find more details about your problem>> \n\n\thttps://www.geeksforgeeks.org/python-program-for-factorial-of-a-number\n"
+      ]
+    },
+    {
+      "tag": "problem_3",
+      "patterns": [
+        "Area of Circle",
+        "Find Area of Circle"
+      ],
+      "responses": [
+        "Your solution is here>>\n\tPI = 3.14\n\tr = float(input('Enter radius of a circle'))\n\tarea = PI*(r*r)\n\tprint(\"Area = \",area)\n\nIf you want to Know the Algorithm?\n>> Then type \"Area of Circle's Algorithm\"\n Or, If you want to Know about more Methods?\n>> Then type \"Area of Circle's Method\""
+      ]
+    },
+    {
+      "tag": "algo_3",
+      "patterns": [
+        "Area of Circle's Algorithm"
+      ],
+      "responses": [
+        "Algorithm:\n\tStep1: Declare a constant PI=3.14\n\tStep2: Take a numeric value (radius) from the user\n\tStep3: Multiply square of the radius by constant(PI)\n\t and store result into a new variable\n\tStep4: Display the result.\n"
+      ]
+    },
+    {
+      "tag": "mthd_3",
+      "patterns": [
+        "Area of Circle's Method"
+      ],
+      "responses": [
+        "Here you can find more details about your problem>> \n\n\thttps://www.geeksforgeeks.org/python-program-for-program-to-find-area-of-a-circle\n"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    }
+  ]
+}
